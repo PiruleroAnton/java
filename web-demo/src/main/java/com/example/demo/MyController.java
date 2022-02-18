@@ -42,4 +42,16 @@ public class MyController {
    model.addAttribute("formulario", formulario);
    return "resultado";
  }
+ 
+ @GetMapping("/formulario2")
+ public String formularioEnviar2 (Model model) {
+	 model.addAttribute("formulario2", new formulario2());
+	 return "formulario2";
+ }
+ 
+ @PostMapping("/formulario2")
+ public String formulariosubmit2(@ModelAttribute formulario2 formulario2,Model model) {
+	 model.addAttribute("formulario2", formulario2 );
+	 return "resultado2";
+	 }
 }

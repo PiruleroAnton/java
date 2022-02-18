@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Manejando la respuesta del formulario en spring</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Bootstrap CSS -->
+	<link href="../static/css/bootstrap.css" rel="stylesheet"
+	th:href="@{/css/bootstrap.css}">
+
+</head>
+<body>
+	<div class="container">
+		<h1>Resultado datos personales: </h1>
+	    <p th:text="'id: ' + ${formulario2.direccion}" />
+	    <p th:text="'Nombre: ' + ${formulario2.telefono}" />
+	    <a href="/formulario2" class="btn btn-lg btn-secondary">Envia otro mensaje</a>
+	</div>
+</body>
+</html>

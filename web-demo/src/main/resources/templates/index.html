@@ -1,22 +1,43 @@
-<!doctype html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>My First Spring Boot App</title>
-    <style>
-        html {
-            font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
-            color: #404040;
-            background-color: #d3d3d3;
-        }
-        body{
-            padding: 5em;
-        }
-    </style>
-</head>
-<body>
-    <h1>Hello from Spring Boot!</h1>
-    <p>
-        This page is served at <span th:text="${tstamp}"></span> 
-    </p>
-</body>
-</html>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es"><head>
+  
+  <meta charset="UTF-8">
+  <title>Inicio Spring Boot con Bootstrap</title>
+
+  
+<!-- Bootstrap CSS -->
+  
+  <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}">
+
+</head><body style="color: rgb(0, 0, 0); background-color: rgb(102, 102, 102);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+<h1 style="background-color: rgb(102, 102, 102); text-align: center;"><br>
+</h1>
+
+<h1 style="background-color: rgb(102, 102, 102); text-align: center;"><br>
+</h1>
+
+<h1 style="background-color: rgb(102, 102, 102); text-align: center; color: black;"><big>Hello
+from Spring Boot!</big> </h1>
+
+<div style="text-align: center;"> </div>
+
+<p style="background-color: red; text-align: center;"> <big> Esta pagina fue enviada el: </big> <span th:text="${tstamp}"></span> </p>
+
+<div style="text-align: center;"> <main role="main" class="inner cover">
+</main></div>
+
+<h1 style="text-align: center;" class="cover-heading">Ejemplo de
+formulario bootstrap<br>
+</h1>
+
+<div style="text-align: center;"> </div>
+
+<p style="text-align: center;" class="lead">Este es un ejemplo
+empleando la libreria bootstraip y kompozer<br>
+</p>
+
+<div style="text-align: center;"> <a href="/formulario2" class="btn btn-lg btn-secondary">Ver ejemplo</a></div>
+
+<p class="lead"> </p>
+
+</body></html>
